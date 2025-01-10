@@ -4,15 +4,18 @@ A tool designed to assist in extracting IP addresses from Darktrace data based o
 
 # TODO
 
-A lot, making it functionnal first, less usefull stuffs and details later
+A lot, making it functionnal first, less usefull stuffs and details later\
 Find a better name
 
-# How to use
+# Installation
 
 ```
 git clone https://github.com/Couscouz/darktrace-assistant
 cd darktrace-assistant
 pip install requests
-
-python assistant.py
 ```
+
+Then you need to set your public/private tokens in the .env\
+Here is more information about how to get them : <link>
+
+# 
