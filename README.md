@@ -1,5 +1,7 @@
 # Darktrace Assistant
 
+**Not functionnal at the moment**
+
 A tool designed to assist in extracting :
 - IP addresses from Darktrace data based on specified conditions.
 - Fields from Models Alerts in Vizualizer
