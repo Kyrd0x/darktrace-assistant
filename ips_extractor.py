@@ -1,21 +1,8 @@
 from datetime import datetime, timezone
-from hashlib import sha1
+from darktrace_api import *
 import argparse
-import requests
-import urllib3
 import socket
-import hmac
 
-urllib3.disable_warnings()
-
-# will be in command line
-DARKTRACE_PUBLIC_TOKEN="REDACTED"
-DARKTRACE_PRIVATE_TOKEN="REDACTED"
-DARKTRACE_URL="REDACTED"
-
-
-def sign_request(private_token, api_request, public_token, date):
-    return hmac.new(private_token.encode('ASCII'), (api_request+'\n'+public_token+'\n'+date).encode('ASCII'), sha1).hexdigest()
 
 def get_all_tags(url, public_token, private_token):
     date = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")

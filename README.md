@@ -14,10 +14,15 @@ Find a better name
 ```bash
 git clone https://github.com/Kyrd0x/darktrace-assistant
 cd darktrace-assistant
+cp .template.env .env
+
+python3 -m venv env
+source env/bin/activate
+
 pip install -r requirements.txt
 ```
 
-Then you need to set your public/private tokens in the .env\
-Here is more information about how to get them : (soon)
+Then you need to set your public/private tokens in the .env file.\
+Here is more information about how to get them: (soon)\
 
 
